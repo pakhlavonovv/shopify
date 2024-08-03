@@ -1,0 +1,120 @@
+.customers{
+    margin-top: 100px;
+    .customers__inner{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        .customers__card__left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            order: 1;
+            p{
+                width: 90%;
+            }
+            .card__bottom{
+                display: flex;
+                gap: 10px;
+            }
+        }
+        .customers__card__right{
+            width: 90%;
+            height: 100%;
+            background-color: #FFF8F6;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            order: 2;
+            img{
+                width: 90%;
+            }
+        }
+    }
+    .customers__inner2{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        .customers__card__left{
+            width: 90%;
+            height: 100%;
+            background-color: #C6F0FC;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            img{
+                width: 90%;
+            }
+        }
+        .customers__card__right{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p{
+                width: 90%;
+            }
+            .card__bottom{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}
+.left-right__btn{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: black;
+        cursor: pointer;
+    }
+}
+@media (min-width: 760px) {
+    .customers{
+        .customers__inner{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            .customers__card__left{
+                width: 50%;
+            }   
+            .customers__card__right{
+                width: 90%;
+            }
+        }
+        .customers__inner2{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0px;
+            .customers__card__left{
+                width: 90%;
+            }   
+            .customers__card__right{
+                width: 50%;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .customers{
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+    }
+}

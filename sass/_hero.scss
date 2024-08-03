@@ -1,0 +1,137 @@
+.hero {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #002D2D;
+    color: white;
+
+    .hero__wrapper {
+        .hero__left {
+            width: 100%;
+
+            .hero__title {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    font-weight: 400;
+                }
+            }
+
+            .hero__bottom {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .bottom__actions {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    input {
+                        width: 90%;
+                        height: 40px;
+                        border-radius: 4px;
+                        border: none;
+                        color: #6B7177;
+                        padding: 10px;
+                        outline: none;
+                    }
+
+                    button {
+                        width: 50%;
+                        height: 40px;
+                        background-color: #008060;
+                        color: white;
+                        font-size: 15px;
+                        border: 1px solid #008060;
+                        transition: all ease-in 0.3s;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: transparent;
+                            border: 1px solid #008060;
+                        }
+                    }
+                }
+
+            }
+        }
+        .hero__right{
+            margin-top: 20px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 700px) {
+    .hero{
+        .hero__wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 70px;
+            .hero__left{
+                width: 80%;
+            }
+            .hero__right{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 840px) {
+    .hero{
+        .hero__wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 70px;
+            .hero__left{
+                width: 80%;
+            }
+            .hero__right{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .hero{
+        padding-top: 100px;
+        .hero__wrapper{
+            .hero__left{
+                width: 80%;
+                .hero__title{
+                    h1{
+                        font-size: 60px;
+                        width: 80%;
+                    }
+                }
+                .hero__bottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    .bottom__actions{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        input{
+                            width: 60%;
+                        }
+                        button{
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+            .hero__right{
+                img{
+                    width: 100%;
+                }  
+            }
+        }
+    }
+}
